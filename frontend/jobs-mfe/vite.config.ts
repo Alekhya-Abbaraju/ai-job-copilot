@@ -10,6 +10,7 @@ export default defineConfig({
     tailwindcss(),
     federation({
       name: 'jobs_mfe',
+      dts: false,
       filename: 'remoteEntry.js',
       exposes: {
         './JobsApp': './src/JobsApp.jsx',

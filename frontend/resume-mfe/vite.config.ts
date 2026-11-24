@@ -10,6 +10,7 @@ export default defineConfig({
     tailwindcss(),
     federation({
       name: 'resume_mfe',
+      dts: false,
       filename: 'remoteEntry.js',
       exposes: {
         './ResumeApp': './src/ResumeApp.jsx',

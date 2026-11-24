@@ -9,6 +9,7 @@ export default defineConfig({
     tailwindcss(),
     federation({
       name: 'auth_mfe',
+      dts: false,
       filename: 'remoteEntry.js',
       exposes: {
   './AuthContainer': './src/Components/authContainer.jsx',

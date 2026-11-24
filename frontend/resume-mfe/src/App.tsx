@@ -7,7 +7,7 @@ function App() {
 
   return (
     <div className={theme === 'dark' ? 'dark' : ''}>
-      <ResumeApp theme={theme} setTheme={setTheme} />
+      <ResumeApp token={localStorage.getItem('accessToken') || localStorage.getItem('token') || sessionStorage.getItem('accessToken') || sessionStorage.getItem('token') || ''} theme={theme} setTheme={setTheme} />
     </div>
   );
 }
